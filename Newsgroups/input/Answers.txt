@@ -1,0 +1,17 @@
+trained on file_1,file_2,file_3,file_4
+probability = 0.956
+
+trained on file_0,file_2,file_3,file_4
+probability = 0.949
+
+trained on file_0,file_1,file_3,file_4
+probability = 0.956
+
+trained on file_0,file_1,file_2,file_4
+probability = 0.949
+
+trained on file_0,file_1,file_2,file_3
+probability = 0.9488
+
+probability of random guess = 0.125
+avg. probability of our Algorithm  = 0.9517
