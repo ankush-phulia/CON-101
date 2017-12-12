@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./Sudoku.js"></script>
+    <script type="text/javascript" src="./txt.js"></script>
+    <script type="text/javascript" src="./Driver.js"></script>
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="Sudoku.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Sudoku</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+   <!--  <script type="text/javascript" language="javascript" src="sudoku/sudoku.nocache.js"></script> -->
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+<body onload="Driver()">
+    <svg xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+      id="grid" display="block" margin="auto auto auto auto" width="450" height="450" viewBox=" 0 0 315 315">
+      <line x1="0" y1="35" x2="315" y2="35" stroke ="black"/>
+      <line x1="0" y1="70" x2="315" y2="70" stroke ="black"/>
+      <line x1="0" y1="105" x2="315" y2="105" stroke ="black" stroke-width="3"/>
+      <line x1="0" y1="140" x2="315" y2="140" stroke ="black"/>
+      <line x1="0" y1="175" x2="315" y2="175" stroke ="black"/>
+      <line x1="0" y1="210" x2="315" y2="210" stroke ="black" stroke-width="3"/>
+      <line x1="0" y1="245" x2="315" y2="245" stroke ="black"/>
+      <line x1="0" y1="280" x2="315" y2="280" stroke ="black"/>
+      <line x1="0" y1="315" x2="315" y2="315" stroke ="black" stroke-width="3" />
+      <line y1="0" x1="35" y2="315" x2="35" stroke ="black"/>
+      <line y1="0" x1="70" y2="315" x2="70" stroke ="black"/>
+      <line y1="0" x1="105" y2="315" x2="105" stroke ="black" stroke-width="3" />
+      <line y1="0" x1="140" y2="315" x2="140" stroke ="black"/>
+      <line y1="0" x1="175" y2="315" x2="175" stroke ="black"/>
+      <line y1="0" x1="210" y2="315" x2="210" stroke ="black" stroke-width="3" />
+      <line y1="0" x1="245" y2="315" x2="245" stroke ="black"/>
+      <line y1="0" x1="280" y2="315" x2="280" stroke ="black"/>
+      <line y1="0" x1="315" y2="315" x2="315" stroke ="black" stroke-width="3" />
+      <line x1="0" y1="0" x2="315" y2="0" stroke ="black" stroke-width="3" />
+      <line y1="0" x1="0" y2="315" x2="0" stroke ="black" stroke-width="3" />
+    </svg>  
+    <br>
+    <select id="diff">
+      <option value="None" style="display:none">Choose a Difficulty Level</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+    <br>
+    <br>
+    <span style="white-space: nowrap;">Time Elapsed </span>
+    <span id = "time" style="white-space: nowrap;">0:0:0</span>
+    <br>
+    <br>
+    <button type="button" id="gen" >Generate</button>
+    <button type="button" id="sub" >Submit</button>
+    <button type="button" id="sol" >Solution</button>
+
+  <!-- <!   <! OPTIONAL: include this if you want history support -->
+    <!-- <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe> -->
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+     <!-- <table align="center">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
+      </tr>
+      <tr>
+        <td id="nameFieldContainer"></td>
+        <td id="sendButtonContainer"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+      </tr>
+    </table> -->
+  </body>
+</html>
