@@ -1,3 +1,0 @@
-# Module con101sudoku
-# RPC service class, partial path of RPC policy file
-com.google.sudoku.client.GreetingService, B270D2E047E65CDD8849C4FC60093DCA.gwt.rpc

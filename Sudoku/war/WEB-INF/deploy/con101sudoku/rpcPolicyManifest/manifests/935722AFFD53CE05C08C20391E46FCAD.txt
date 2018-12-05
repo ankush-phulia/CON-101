@@ -1,2 +1,0 @@
-serviceClass: com.google.sudoku.client.GreetingService
-path: B270D2E047E65CDD8849C4FC60093DCA.gwt.rpc
