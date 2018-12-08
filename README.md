@@ -1,5 +1,8 @@
-# CON-101
+# CON 101
+
 Projects done in Introduction to Computer Science, 2015
-1. Memory Assignment - assignment of values to variables "efficiently"
-2. Newgroups - naive bayes with Laplace smoothing to classify news articles
-3. Sudoku - sudoku puzzle generator web app with adjustable difficulty
+1. Memory Assignment - "Efficient" register allocation of variables/values
+2. Newgroups - Classification of news articles using Naive Bayes with Laplace Smoothing
+3. Sudoku - Sudoku puzzle generator webapp with adjustable difficulty \*
+
+\* *Might be broken, the main code is in the javascript files*
